@@ -7,7 +7,7 @@ require "jgastald-weekly_vertical_calendar/version"
 Gem::Specification.new do |s|
   s.name        = "jgastald-weekly_vertical_calendar"
   s.version     = JgastaldWeeklyVerticalCalendar::VERSION
-  s.authors     = ["TODO: Your name"]
+  s.authors     = ["jgastald"]
   s.email       = ["TODO: Your email"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of JgastaldWeeklyVerticalCalendar."
