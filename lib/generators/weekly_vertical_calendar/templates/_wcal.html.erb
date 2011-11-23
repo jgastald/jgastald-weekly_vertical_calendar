@@ -1,4 +1,4 @@
-<% hora_inicial = 8 
+<%% hora_inicial = 8 
    hora_final   = 23
    alto_hora    = 20
    ancho_dia    = 90
@@ -17,16 +17,16 @@
       
 */    
       // Hora
-      hora_decimal  = pos_y / <%=alto_hora%> / 4 + <%=hora_inicial=%>;
+      hora_decimal  = pos_y / <%%=alto_hora%> / 4 + <%%=hora_inicial=%>;
       hora          = Math.floor(hora_decimal);
       //   Los minutos los redondeo al slot definido por "minutes_step"
-      minutos       = Math.floor((hora_decimal - hora) * 60 / <%=minutes_step%>) * <%=minutes_step%>;
+      minutos       = Math.floor((hora_decimal - hora) * 60 / <%%=minutes_step%>) * <%%=minutes_step%>;
 //      alert (hora + ":" + minutos);
       
       // Dia
-      dia = Math.floor(pos_x / <%=ancho_dia%>);
+      dia = Math.floor(pos_x / <%%=ancho_dia%>);
       
-      window.location="<%= url_for(:action=> 'new', :controller=>'appointments', :start_date=>@start_date)%>" +
+      window.location="<%%= url_for(:action=> 'new', :controller=>'appointments', :start_date=>@start_date)%>" +
                       "&hour=" + hora + "&minutes=" + minutos + "&day=" + dia;
 
   }
@@ -35,27 +35,27 @@
 <div id="hours">
   <div id="hour_header">&nbsp</div>
   
-  <% (hora_inicial..hora_final).each do |hour| %>
-    <div id= "hour"> <%=hour%>:00 </div>
-  <% end %>
+  <%% (hora_inicial..hora_final).each do |hour| %>
+    <div id= "hour"> <%%=hour%>:00 </div>
+  <%% end %>
 </div>
 
 <div id="days">
   <div id="days_header">
   
-  <% (@start_date..@end_date).each do |day| %>
+  <%% (@start_date..@end_date).each do |day| %>
     <div id="day_header_box">  
-      <b> <%= l day, :format => :weekday %> </b>
+      <b> <%%= l day, :format => :weekday %> </b>
       <br/>
-      <%= l day, :format => '%B %d' %>
+      <%%= l day, :format => '%B %d' %>
     </div>
   
-  <% end %>
+  <%% end %>
   </div>
   <div id="grid" onclick="point_it(event);">
-    <% (@start_date..@end_date).each do |day| %>
+    <%% (@start_date..@end_date).each do |day| %>
       <div id="day_column">
-        <% @events.each do |event|
+        <%% @events.each do |event|
           # Obtengo el dia del año de cada valor
           j_start_at, j_end_at, j_day = wcal_j(event.start_at, event.end_at, day)
           
@@ -80,7 +80,7 @@
             event_onclick = "location.href='/appointments/" + event.id.to_s() + "';"            
 
         %>      
-             <%= tag("div", {:id => get_event_name(event),
+             <%%= tag("div", {:id => get_event_name(event),
                              :style => event_style, 
                              :class => get_event_name(event),
                              :tooltip => "pepe"
@@ -89,14 +89,14 @@
                     )
               %>
                             
-            <%= if event.duration > 0
+            <%%= if event.duration > 0
               event.to_s() 
             end  %>
             </div>
-          <% end %>
+          <%% end %>
 
-        <% end %>
+        <%% end %>
       </div>
-    <% end %>
+    <%% end %>
   </div>
 </div>
