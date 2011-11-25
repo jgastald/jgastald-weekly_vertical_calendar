@@ -45,7 +45,7 @@
   
   <%% (@start_date..@end_date).each do |day| %>
     <div id="day_header_box">  
-      <b> <%%= l day, :format => :weekday %> </b>
+      <b> <%%= l day, :format => "%A" %> </b>
       <br/>
       <%%= l day, :format => '%B %d' %>
     </div>
