@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.name        = "jgastald-weekly_vertical_calendar"
   s.version     = JgastaldWeeklyVerticalCalendar::VERSION
   s.authors     = ["jgastald"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.email       = ["jgastald@gmail.com"]
+#  s.homepage    = "TODO"
   s.summary     = "TODO: Summary of JgastaldWeeklyVerticalCalendar."
   s.description = "TODO: Description of JgastaldWeeklyVerticalCalendar."
 
