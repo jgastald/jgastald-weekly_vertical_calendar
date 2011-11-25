@@ -15,7 +15,6 @@ class WeeklyVerticalCalendarGenerator < Rails::Generators::NamedBase
     @view_name = "weekly_calendar"
     template "index.html.erb", File.join("app/views", @view_name, "index.html.erb")
     template "_wcal.html.erb", File.join("app/views", @view_name, "_wcal.html.erb")
-    template "weekly_vertical_calendar.css.scss", File.join("app/assets/stylesheets", "weekly_vertical_calendar.css.scss")
     template "weekly_calendar_controller.rb", File.join("app/controllers", "weekly_calendar_controller.rb")      
     template "weekly_calendar_helper.rb", File.join("app/helpers", "weekly_calendar_helper.rb")
     
