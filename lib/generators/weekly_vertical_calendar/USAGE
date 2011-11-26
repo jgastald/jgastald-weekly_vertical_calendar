@@ -1,8 +1,8 @@
 Description:
-    Explain the generator
+    Generates a vertical calendar.
 
 Example:
-    rails generate weekly_vertical_calendar Thing
+    rails generate weekly_vertical_calendar <model_name>
 
     This will create:
         what/will/it/create

@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["jgastald"]
   s.email       = ["jgastald@gmail.com"]
 #  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of JgastaldWeeklyVerticalCalendar."
-  s.description = "TODO: Description of JgastaldWeeklyVerticalCalendar."
+  s.summary     = "Weekly Vertical Calendar"
+  s.description = "It's a Weekly Vertical Calendar."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

@@ -1,3 +1,30 @@
 = JgastaldWeeklyVerticalCalendar
 
+--------------
+This gem is based on plugin made by Ireneusz Skrobis,
+you can find the original code here: https://github.com/kayinrage/weekly_vertical_calendar
+--------------
+
+====== ======== ========
+WEEKLY VERTICAL CALENDAR
+====== ======== ========
+
+As Ireneusz Skrobis, the original developer of weekly_vertical_calendar, said:
+"This is another way for displaying weekly calendar, but this time it is vertical."
+
+It's a generator that can be executed running:
+
+  rails generate weekly_vertical_calendar <model_name>
+
+The model needs two fields:
+  start_at (datetime)
+  end_at (datetime)
+
+
+Requires Rails 3.1.2+.
+
+In the future I will add more parametrization options, as well cleaning up the code
+(it's pretty messy right now)
+
+
 This project rocks and uses MIT-LICENSE.
