@@ -1,5 +1,11 @@
 = JgastaldWeeklyVerticalCalendar
 
++++++++++++++++++
+The project that I was developing this gem for it's on a indefinite hiatus, so I will not update it for some time.
+If you have any interest on a specific feature or improvement, please message me, and I will see what can I do.
++++++++++++++++++
+
+
 --------------
 This gem is based on plugin made by Ireneusz Skrobis,
 you can find the original code here: https://github.com/kayinrage/weekly_vertical_calendar
