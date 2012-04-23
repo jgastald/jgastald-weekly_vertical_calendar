@@ -1,9 +1,9 @@
 = JgastaldWeeklyVerticalCalendar
 
-+++++++++++++++++
+--------------
 The project that I was developing this gem for it's on a indefinite hiatus, so I will not update it for some time.
 If you have any interest on a specific feature or improvement, please message me, and I will see what can I do.
-+++++++++++++++++
+--------------
 
 
 --------------
